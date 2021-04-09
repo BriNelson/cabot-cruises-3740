@@ -1,0 +1,275 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Home | cruise site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/dc408010ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="row limited">
+        <section class="column small-12 medium-6">
+          <figure>
+            <img
+              src="/img/logo0.png"
+              class="logo"
+              alt="logo"
+              srcset="img\logo1.png 1x, img/logo2.png 2x, img/logo3.png 3x"
+            />
+          </figure>
+          <h1>CABOT CRUISES</h1>
+        </section>
+        <section class="column medium-6">
+          <h2><a href="tel:123-456-7890">123-456-7890</a></h2>
+        </section>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <div class="row limited">
+        <button id="hamburgerBtn">
+          <span><i>&#9776;</i>OPEN</span>
+          <span><i>&otimes;</i>CLOSE</span>
+        </button>
+        <ul id="primaryNav">
+          <li><a href="#">Home</a></li>
+          <li class="current-menu-item"><a href="#">Products</a></li>
+          <li><a href="#">Sales</a></li>
+          <li class="parent">
+            <a href="#">Location</a>
+            <ul>
+              <li><a href="#">Here</a></li>
+              <li><a href="#">There</a></li>
+              <li><a href="#">Everywhere</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <input type="search" placeholder="Search" type="text" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+    <main>
+      <div class="slideWrapper">
+        <div class="my_slider">
+          <picture>
+            <source
+              srcset="img/small_slide1.jpg"
+              media="(max-width: 28.12rem)"
+            />
+            <source srcset="img/big_slide1.jpg" media="(min-width: 28.12rem)" />
+            <img src="img/big_slide3.jpg" alt="" />
+          </picture>
+          <picture>
+            <source
+              srcset="img/small_slide2.jpg"
+              media="(max-width: 28.12rem)"
+            />
+            <source srcset="img/big_slide2.jpg" media="(min-width: 28.12rem)" />
+            <img src="img/big_slide3.jpg" alt="" />
+          </picture>
+          <picture>
+            <source
+              srcset="img/small_slide3.jpg"
+              media="(max-width: 28.12rem)"
+            />
+            <source srcset="img/big_slide3.jpg" media="(min-width: 28.12rem)" />
+            <img src="img/big_slide3.jpg" alt="" />
+          </picture>
+          <picture>
+            <source
+              srcset="img/small_slide4.jpg"
+              media="(max-width: 28.12rem)"
+            />
+            <source srcset="img/big_slide4.jpg" media="(min-width: 28.12rem)" />
+            <img src="img/big_slide3.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="row limited">
+        <section class="column small-12">
+          <h1>Recent Blog Post</h1>
+        </section>
+      </div>
+      <div class="row limited">
+        <section class="column small-6 medium-4 large-3 labeled">
+          <div class="test">
+            <a href="#">
+              <img
+                src="img\stephanie-klepacki-VAqe8TwhhEI-unsplash.jpg"
+                alt="cruise ship"
+              />
+            </a>
+            <h6>Recent Blog Post</h6>
+            <p>sale: 1.99</p>
+          </div>
+        </section>
+        <section class="column small-6 medium-4 large-3 labeled">
+          <div class="test">
+            <a href="#">
+              <img src="img\blog1.jpg" alt="cruise ship" />
+            </a>
+            <h6>Recent Blog Post</h6>
+            <p>2/24/20</p>
+          </div>
+        </section>
+        <section class="column small-6 medium-4 large-3 labeled">
+          <div class="test">
+            <a href="#"><img src="img\blog2.jpg" alt="cruise ship" /> </a>
+            <h6>Recent Blog Post</h6>
+            <p>7/17/21</p>
+          </div>
+        </section>
+        <section class="column small-6 medium-4 large-3 labeled">
+          <div class="test">
+            <a href="#">
+              <img src="img\blog4.jpg" alt="cruise ship" />
+            </a>
+            <h6>Recent Blog Post</h6>
+            <p>7/9/21</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="mainFooter">
+        <div class="row limited">
+          <section class="column small-12 medium-6 large-4">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <a
+              href="http://maps.google.com/maps?q=210+Louise+Ave,+Nashville,+TN+37203"
+            >
+              210, Louise Ave, Nashville, TN 37203
+            </a>
+            <br />
+            <br />
+
+            <h3>Phone:</h3>
+            <p>1-800-555-1234</p>
+            <br />
+            <h3>Hours of Operation</h3>
+            <p>Monday - Friday 9am - 4am</p>
+            <br />
+          </section>
+          <section class="column small-12 medium-6 large-4">
+            <h2>Newsletter</h2>
+            <p>
+              Subscribe to our email list and stay up-to-date with our hotest
+              offers and latest specials
+            </p>
+            <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              pattern=".+@globex.com"
+              size="30"
+              required
+            />
+            <input type="submit" value="Send Request" />
+          </section>
+
+          <section class="column small-12 large-4">
+            <h2>Why Cabot Cruises?</h2>
+            <p>
+              Cabot Cruises is a travel agency providing the best cruise deals
+              on our online travel website. We can help you with all inclusive
+              vacaMons including discounted cruises.
+            </p>
+          </section>
+        </div>
+        <!-- end row -->
+      </div>
+      <div class="subFooter">
+        <div class="row limited">
+          <section class="column small-12">
+            <ul class="social">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="row limited">
+          <section class="column small-12">
+            <p>&copy; 2021 &bull; all rights reserved.</p>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/toggleMenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my_slider").slick({
+          dots: true,
+          mobileFirst: true,
+          autoplay: true,
+          arrows: false,
+        });
+      });
+    </script>
+
+    <!-- JSON LD DATA -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Cabot Cruises",
+        "image": "https://www.google.com/",
+        "@id": "https://www.google.com/",
+        "url": "https://www.google.com/",
+        "telephone": "18005551234",
+        "priceRange": "Please Call",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "210, Louise Ave",
+          "addressLocality": "Nashville",
+          "addressRegion": "TN",
+          "postalCode": "37203",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64rem) {
+  /* -------FLEXBOX------- */
+  .large-3 {
+    flex-basis: 25%;
+  }
+  .large-4 {
+    flex-basis: 33.3333%;
+  }
+
+  /* -------NAVIGATION------- */
+
+  // nav {
+  //   ul {
+  //     margin-left: 2vw;
+  //   }
+  //   li {
+  //     width: auto;
+  //   }
+
+  // }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header figure {
+    margin-left: 1.2rem;
+  }
+  nav button[type="submit"] {
+    margin-right: 2vw;
+  }
+
+  .my_slider {
+    margin: 0 2vw;
+  }
+}

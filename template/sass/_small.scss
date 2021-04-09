@@ -1,0 +1,291 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------BODY------- */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  min-width: 300px;
+}
+
+/* grid settings */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.limited {
+  max-width: 1200px;
+  margin: auto;
+}
+.column {
+  padding: 0 2vw;
+  margin: 0 0 0.75rem 0;
+}
+nav section.column {
+  padding: 0;
+  margin: 0;
+}
+
+.small-12 {
+  flex-basis: 100%;
+}
+.small-6 {
+  flex-basis: 50%;
+}
+
+/* -------HEADER------- */
+header {
+  background-color: #fff;
+  // height: 8rem;
+  padding-right: 10px;
+  // needs em
+}
+
+header .column {
+  margin: 0;
+}
+header figure {
+  justify-content: flex-start;
+}
+header h1 {
+  font-size: 1rem;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header img {
+  margin-left: 1.54rem;
+  margin-top: 0.8rem;
+}
+header a {
+  display: none;
+}
+
+/* -------NAV------- */
+
+/*
+button#hmbrgrBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+  // needs em
+}
+
+nav {
+  background-color: #11172b;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.7rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+}
+nav li.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul.open {
+  display: block;
+}
+nav ul {
+  display: none;
+}*/
+
+nav input[type="search"] {
+  margin-top: 0.1em;
+  border-right: none;
+  border-left: none;
+  border-top-color: #11172b;
+  border-bottom-color: #11172b;
+
+  background-color: rgb(255, 255, 255);
+}
+nav button[type="submit"] {
+  height: 2.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  float: right;
+}
+
+nav input::placeholder {
+  padding-left: 0.6em;
+}
+
+/* -------MAIN------- */
+.test img {
+  width: 100%;
+  height: auto;
+  opacity: 75%;
+}
+
+.test img:hover {
+  opacity: 100%;
+}
+
+.slideWrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.my_slider picture img {
+  width: 100%;
+  height: auto;
+}
+.labeled {
+  position: relative;
+}
+
+.labeled h6,
+.labeled p {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.493);
+  margin: 0;
+  width: 100%;
+  padding: 0.3rem 1rem;
+}
+.labeled h6 {
+  top: 0;
+  font-size: 1.2rem;
+  opacity: 100%;
+  // font-weight: 300;
+}
+.labeled p {
+  bottom: 0;
+  font-weight: 700;
+  color: black;
+}
+
+.test {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+/* -------FOOTER------- */
+footer input::placeholder {
+  color: #eee;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+input[type="email"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  // needs em
+
+  box-sizing: border-box;
+  color: #ffffff;
+  // -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 3%) inset;
+  // box-shadow: 0 1px 0 rgb(0 0 0 / 3%) inset;
+  margin-bottom: 20px;
+  width: 100%;
+  // needs em
+}
+
+input[type="submit"] {
+  border-radius: 25px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border: none;
+  border-radius: 15;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 15px 77px 15px 77px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f26e26;
+  // needs em
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+}
+.mainFooter {
+  background-color: #11172b;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  margin: 1rem 0 0.3rem 0;
+}
+.social ul {
+  padding-left: 0px;
+}
+
+.social li {
+  /* margin: 2 0.26vw; */
+  display: inline-flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 3rem;
+}
+
+.subFooter {
+  padding-top: 1rem;
+  background-color: rgb(13, 15, 39);
+  color: #eee;
+  display: flex;
+  // needs em
+}
+
+.copyright {
+  display: flex;
+  background-color: none;
+  color: black;
+  margin-top: 0.5rem;
+}
+.subFooter .social li a:hover {
+  color: rgba(110, 110, 110, 0.432);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
